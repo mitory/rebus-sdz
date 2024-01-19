@@ -823,7 +823,7 @@
 }
 
 .features-item::after {
-	background: none;
+	display: none;
 }
 
 .features-item2 {
@@ -831,7 +831,10 @@
 }
 
 .features-item:nth-last-child(1)::after {
-	background: none;
+	display: none;
+}
+.features-item2::after {
+	display: none;
 }
 
 .certificis__content {
