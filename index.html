@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/zero_style.css">
+	<link rel="stylesheet" href="css/system_style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Ребус СДЗ</title>
+	<link rel="icon" href="img/mini-logo.svg">
+</head>
+<body>
+	<div class="first-block">
+		<div class="container">
+			<header class='header'>
+				<div class="header__title">
+					<!-- <a href="index.html"> -->
+						<img src="img/logo.svg" alt="логотип" class="header__logo">
+						<h1 class="title">Средство доверенной загрузки<h1>
+					<!-- </a> -->
+				</div>
+				<button class="modal-form__button-open" id="openModalBtn" title="Обратный звонок"><img class="back_call" src="img/icons/mobile.svg" alt="Обратный звонок"></button>
+				<div class="header__contacts contacts">
+					<a href="tel:+74822399174" target="_blank">
+						<div class="contacts__item contacts-item">
+							<p class="contacts-item__contact">
+								+7 (4822) 399-174
+							</p>
+						</div>
+					</a>
+					<a href="tel:+74959986005" target="_blank">
+						<div class="contacts__item contacts-item">
+							<p class="contacts-item__contact">
+								+7 (495) 998-60-05
+							</p>
+						</div>
+					</a>
+					<a href="tel:+74822399281" target="_blank">
+						<div class="contacts__item contacts-item">
+							<p class="contacts-item__contact">
+								+7 (4822) 399-281
+							</p>
+							<p class="contacts-item__descr">
+								(для технических вопросов)
+							</p>
+						</div>
+					</a>
+					<a href="mailto:zi@cps.tver.ru" target="_blank">
+						<div class="contacts__item contacts-item">
+							<p class="contacts-item__contact">
+								zi@cps.tver.ru
+							</p>
+						</div>
+					</a>
+				</div>
+			</header>
+			<div class="first-block__text">
+				Аппаратно-программный комплекс «Ребус-СДЗ» предназначен для обеспечения доверенной загрузки 
+				средства вычислительной техники за счет предотвращения несанкционированного доступа к ресурсам 
+				средства вычислительной техники на этапе его загрузки.
+				<br><br>
+				Изделие может применяться в качестве элемента системы защиты информации информационных систем, 
+				функционирующих на базе средств вычислительной техники, обрабатывающих государственную тайну 
+				и (или) конфиденциальную информацию, включая персональные данные.
+			</div>
+			<div class="first-block__buttons">
+				<a href="docs/Ребус-СДЗ_буклет.pdf" target="_blank">
+					<div class="first_block__button button">
+						<img class="button__icon" src="img/icons/download-pdf.svg" alt="Буклет">
+						<p class="button__name">Буклет</p>
+					</div>
+				</a>
+				<a href="#request">
+					<div class="first_block__button button">
+						<img class="button__icon" src="img/icons/cart.svg" alt="Заказать">
+						<p class="button__name">Заказать</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- <nav class="nav">
+		<div class="container">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#structure">Состав</a></li>
+				<li class="nav__item"><a href="#functions">Выполняемые функции</a></li>
+				<li class="nav__item"><a href="#specifications">Характеристики</a></li>
+				<li class="nav__item"><a href="#features">Особенности</a></li>
+				<li class="nav__item"><a href="#documentation">Документация</a></li>
+				<li class="nav__item"><a href="#request">Запрос КП</a></li>
+				<li class="nav__item"><a href="#footer">Контакты</a></li>
+			</ul>
+		</div>
+	</nav> -->
+
+	<nav class="nav">
+		<div class="nav-mobile-toggle" id="nav-mobile-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    <div class="container">
+        <ul class="nav__list desctop">
+           <li class="nav__item"><a href="#structure">Состав</a></li>
+				<li class="nav__item"><a href="#functions">Выполняемые функции</a></li>
+				<li class="nav__item"><a href="#specifications">Характеристики</a></li>
+				<li class="nav__item"><a href="#features">Особенности</a></li>
+				<li class="nav__item"><a href="#documentation">Документация</a></li>
+				<li class="nav__item"><a href="#request">Запрос КП</a></li>
+				<li class="nav__item"><a href="#footer">Контакты</a></li>
+        </ul>
+    </div>
+    <div class="nav-mobile-menu" id="nav-mobile-menu">
+        <img src="img/icons/close.svg" alt="Закрыть" class="close" id="nav-mobile-close">
+        <ul class="nav__list mobile">
+            <li class="nav__item"><a href="#structure">Состав</a></li>
+				<li class="nav__item"><a href="#functions">Выполняемые функции</a></li>
+				<li class="nav__item"><a href="#specifications">Характеристики</a></li>
+				<li class="nav__item"><a href="#features">Особенности</a></li>
+				<li class="nav__item"><a href="#documentation">Документация</a></li>
+				<li class="nav__item"><a href="#request">Запрос КП</a></li>
+				<li class="nav__item"><a href="#footer">Контакты</a></li>
+        </ul>
+    </div>
+</nav>
+
+	<div class="structure-and-functions__wrapper">
+		<section class="structure" id="structure">
+			<div class="container">
+				<div class="structure__wrapper">
+					<h2 class="section__title structure__title ">Состав «Ребус-СДЗ»</h2>
+				</div>
+				
+				<div class="controler-sdz">
+					
+				</div>
+			</div>
+		</section>
+		<section class="functions" id="functions">
+			<div class="container">
+				<h2 class="section__title functions__title ">Выполняемые функции</h2>
+				<ul class="functions__list">
+					<li class="functions__item">Разграничение доступа к управлению СДЗ;</li>
+					<li class="functions__item">Управление работой СДЗ;</li>
+					<li class="functions__item">Управление параметрами СДЗ;</li>
+					<li class="functions__item">Аудит безопасности СДЗ;</li>
+					<li class="functions__item">Идентификация и аутентификация;</li>
+					<li class="functions__item">Тестирование СДЗ, контроль целостности программного обеспечения и параметров СДЗ;</li>
+					<li class="functions__item">Контроль компонентов средств вычислительной техники;</li>
+					<li class="functions__item">Блокирование загрузки операционной системы средством доверенной загрузки;</li>
+					<li class="functions__item">Сигнализация СДЗ;</li>
+					<li class="functions__item">Обеспечение безопасности СДЗ при возникновении сбоев и ошибок в процессе работы;</li>
+					<li class="functions__item">Обеспечение безопасности после завершения работы СДЗ.</li>
+				</ul>
+			</div>
+		</section>
+		<div class="overlay-image"></div>
+	</div>
+	<section class="specifications" id="specifications">
+		<div class="container">
+			<h2 class="section__title specifications__title ">Основные характеристики</h2>
+			<div class="specifications__list">
+				<div class="specifications__item">
+					<img src="img/characters/cpu.svg" alt="CPU" class="specifications__img">
+					<p class="specifications__text">
+						Поддерживаемая архитектура ЭВМ – x86-64
+					</p>
+				</div>
+				<div class="specifications__item">
+					<img src="img/characters/card.svg" alt="card" class="specifications__img">
+					<p class="specifications__text">
+						Интерфейс подключения контроллера СДЗ к материнской плате ЭВМ – PCI Express (Типы: x1, x4, x8, x16)
+					</p>
+				</div>
+				<div class="specifications__item">
+					<img src="img/characters/distributed.svg" alt="distributed" class="specifications__img">
+					<p class="specifications__text">
+						Файловые системы, поддерживаемые контролем целостности файлов – FAT16, FAT32, NTFS, Ext2, Ext3, Ext4
+					</p>
+				</div>
+				<div class="specifications__item">
+					<img src="img/characters/usb.svg" alt="usb" class="specifications__img">
+					<p class="specifications__text">
+						Поддерживаемые аппаратные ключи – iButton, Рутокен ЭЦП 2.0, JaCarta SF/ГОСТ
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="features" id="features">
+		<div class="container">
+			<h2 class="section__title features__title ">Особенности</h2>
+			<div class="features__list-block">
+				<div class="features__list">
+					<div class="features-item">
+						<div class="numeric">
+							<span class="numeric__text">1</span>
+						</div>
+						<p class="features-item__text">
+							Запуск авторизации пользователя на ранних стадиях инициализации ЭВМ, до запуска средства конфигурирования UEFI BIOS ЭВМ
+						</p>
+					</div>
+					<div class="features-item">
+						<div class="numeric">
+							<span class="numeric__text">2</span>
+						</div>
+						<p class="features-item__text">
+							Средство управления с удобным графическим интерфейсом
+						</p>
+					</div>
+
+					<div class="features-item">
+						<div class="numeric">
+							<span class="numeric__text">3</span>
+						</div>
+						<p class="features-item__text">
+							Программное обеспечение и данные СДЗ хранятся во внутренней памяти контроллера СДЗ. Для хранения программ и данных СДЗ не используются ресурсы ЭВМ
+						</p>
+					</div>
+				</div>
+				<div class="features__list">
+					<div class="features-item features-item2">
+						<div class="numeric">
+							<span class="numeric__text">4</span>
+						</div>
+						<p class="features-item__text">
+							Высокая адаптивность к разным материнским платам за счет наличия возможности тонкой настройки параметров запуска программного обеспечения СДЗ
+						</p>
+					</div>
+					<div class="features-item features-item2">
+						<div class="numeric">
+							<span class="numeric__text">5</span>
+						</div>
+						<p class="features-item__text">
+							Наличие контроля изъятия  контроллера СДЗ из ЭВМ
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="certificis">
+				<div class="certificis__content">
+					<ul class="certificis__list">
+						<li class="certificis__item">
+							Изделие соответствует требованиям к средствам доверенной загрузки уровня платы расширения второго класса.
+						</li>
+						<li class="certificis__item">
+							Изделие соответствует требованиям документов:
+						</li>
+					</ul>
+					<ul class="certificis__list2">
+						<li> «Требования к средствам доверенной загрузки» (ФСТЭК России, 2013);</li>
+						<li>«Профиль защиты средства доверенной загрузки уровня платы расширения второго класса защиты» ИТ.СДЗ.ПР2.ПЗ (ФСТЭК России, 2013),</li>
+						<li>«Требования по безопасности информации, устанавливающие уровни доверия к средствам технической защиты информации и средствам обеспечения безопасности информации» (ФСТЭК России, 2020), 2 уровень доверия.</li>
+					</ul>
+					<ul class="certificis__list">
+						<li class="certificis__item">
+							АПК «Ребус-СДЗ» сертифицирован ФСТЭК России. Сертификат соответствия №…………
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="documentation" id="documentation">
+		<div class="container">
+			<h2 class="section__title documentation__title ">Документация</h2>
+			<div class="documentation__list">
+				<a href="docs/Описание применения.pdf" target="_blank">
+					<div class="documentation__item">
+						<img src="img/icons/download-pdf.svg" alt="Описание применения">
+						<p class="documentation__text">
+							Описание применения
+						</p>
+					</div>
+				</a>
+
+				<a href="docs/Руководство по эксплуатации.pdf" target="_blank">
+					<div class="documentation__item">
+						<img src="img/icons/download-pdf.svg" alt="Руководство по эксплуатации">
+						<p class="documentation__text">
+							Руководство по эксплуатации
+						</p>
+					</div>
+				</a>
+
+				<a href="docs/Руководство оператора.pdf" target="_blank">
+					<div class="documentation__item">
+						<img src="img/icons/download-pdf.svg" alt="Руководство оператора">
+						<p class="documentation__text">
+							Руководство оператора
+						</p>
+					</div>
+				</a>
+
+				<a href="docs/Формуляр.pdf" target="_blank">
+					<div class="documentation__item">
+						<img src="img/icons/download-pdf.svg" alt="Формуляр">
+						<p class="documentation__text">
+							Формуляр
+						</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="request" id="request">
+		<div class="container">
+			<h2 class="section__title request__title ">Запрос коммерческого предложения</h2>
+			<form action="" name="request" class="form">
+				<div class="contact-data">
+					<input type="text" id="name" name="name" class="input" placeholder="ФИО" />
+					<input type="text" id="organization" name="organization" class="input" placeholder="Организация"/>
+					<input type="email" id="email" name="email" class="input" placeholder="Почта"/>
+					<input type="tel" id="tel" name="tel" class="input" onkeypress="return /[0-9+]/.test(event.key)" placeholder="Телефон"/>
+				</div>
+				<div class="comment">
+					<textarea class="input textarea" id="comment" name="comment" rows="5" cols="33" placeholder="Ваш комментарий"></textarea>
+				</div>
+				<div class="form-end">
+					<button class="form-end__button button">
+						<img src="img/icons/cart.svg" alt="Заказать">
+						<p class="button__name">Заказать</p>
+					</button>
+					<p class="form-end__comment">
+						Комментарий к заказу  Высокая адаптивность к разным материнским платам за счет наличия возможности тонкой настройки параметров запуска программного обеспечения СДЗ
+					</p>
+				</div>
+			</form>
+		</div>
+	</section>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__content">
+					<a href="https://cps.tver.ru/" target="_blank"><img class="footer__logocps" src="img/logo-cps.png" alt="лого ЦПС"></a>
+					<div class="footer__contact">
+						<div class="address">
+							<a href="https://cps.tver.ru/" target="_blank">© АО НИИ ЦПС </a>| <a href="mailto:zi@cps.tver.ru" target="_blank">zi@cps.tver.ru</a><br>
+						<a href="https://yandex.ru/maps/-/CDurM46c" target="_blank">	г. Тверь, пр-т. Николая Корыткова, 3А</a>
+						</div>
+
+						<div class="contacts footer__contacts">
+							<a href="tel:+74822399174" target="_blank">
+								<div class="contacts__item contacts-item footer__contacts-item">
+									<p class="contacts-item__contact">
+										+7 (4822) 399-174
+									</p>
+								</div>
+							</a>
+							<a href="tel:+74959986005" target="_blank">
+								<div class="contacts__item contacts-item footer__contacts-item">
+									<p class="contacts-item__contact">
+										+7 (495) 998-60-05
+									</p>
+								</div>
+							</a>
+							<a href="tel:+74822399281" target="_blank">
+								<div class="contacts__item contacts-item footer__contacts-item">
+									<p class="contacts-item__contact">
+										+7 (4822) 399-281
+									</p>
+									<p class="contacts-item__descr">
+										(для технических вопросов)
+									</p>
+								</div>
+							</a>
+							<a href="mailto:zi@cps.tver.ru" target="_blank">
+								<div class="contacts__item contacts-item footer__contacts-item">
+									<p class="contacts-item__contact">
+										zi@cps.tver.ru
+									</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="links">
+							<a href="https://cps.tver.ru/" target="_blank" class="link">АО НИИ ЦПС</a>
+							<a href="https://cps.tver.ru/sistemi_zashiti_informatsii/" target="_blank" class="link">Информационная безопасность</a>
+						</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div id="popupMessage" class="hidden">
+		<p id="popupText">Пожалуйста, заполните все поля формы</p>
+	</div>
+	<div id="myModal" class="modal">
+		<div class="modal-content">
+			<img src="img/icons/close.svg" alt="Закрыть" class="close" id="closeModalBtn">
+
+			<form action="" name="back_call" class="modal-form">
+				<input type="text" id="modal_form_name" name="modal_form_name" class="input" placeholder="ФИО"/>
+				<input type="tel" id="modal_form_tel" name="modal_form_tel" class="input" onkeypress="return /[0-9+]/.test(event.key)" placeholder="Телефон"/>
+				<input type="text" id="modal_form_comfort_time" name="modal_form_comfort_time" class="input" placeholder="Удобное время"/>
+				<button class="modal-form__button">
+					<img class="modal-form__icon-button" src="img/icons/book.svg" alt="Обратный звонок">
+					<p class="modal-form__text-button">Отправить заявку на звонок</p>
+				</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/popup.js"></script>
+	<script src="js/request_form.js"></script>
+	<script src="js/modal_form.js"></script>
+	<script src="js/burger.js"></script>
+	<script></script>
+</body>
+</html>
