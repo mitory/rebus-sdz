@@ -1,7 +1,10 @@
 :root {
-	--text-size: 1rem;/*14px;*/
-	--link-size: 1.14285714286rem; /*16px;*/
-	--small-size: 0.85714285714rem; /*12px;*/
+	--text-size: 1rem;
+	/*14px;*/
+	--link-size: 1.14285714286rem;
+	/*16px;*/
+	--small-size: 0.85714285714rem;
+	/*12px;*/
 	--main-green-color: #34E491;
 	--main-gray-color: #0E0E0E;
 	--main-white-color: #fff;
@@ -37,6 +40,7 @@ a:hover {
 .container {
 	padding: 0 15px;
 }
+
 @media (min-width: 480px) {
 	.container {
 		max-width: 480px;

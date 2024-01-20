@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var navListItems = document.querySelectorAll(".nav__list.mobile .nav__item a");
     navListItems.forEach(function (item) {
         item.addEventListener("click", function () {
-            // Закрываем меню при клике на пункт списка
             navMobileMenu.classList.remove("show");
         });
     });
