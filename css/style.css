@@ -1003,6 +1003,8 @@
 		z-index: 10;
 /*		background: var(--main-green-color);*/
 background: transparent;
+/*box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);*/
+/*border-bottom: 2px solid #d5d5d5;*/
 	}
 
 
@@ -1010,6 +1012,7 @@ background: transparent;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
 	}
 
 	.nav-mobile-toggle {

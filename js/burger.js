@@ -39,12 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
         header.style.background = getComputedStyle(document.documentElement).getPropertyValue('--main-green-color')
         document.querySelector('.nav-mobile__logo').style.display = 'block';
         document.querySelector('.nav-mobile__tel').style.display = 'block';
-        // header.style.background = "0";
+       header.style.boxShadow = '0 5px 5px -5px rgba(0, 0, 0, .5)';
     } else {
         document.querySelector('.nav-mobile__logo').style.display = 'none';
         document.querySelector('.nav-mobile__tel').style.display = 'none';
         header.style.background = 'transparent';
-        // header.style.top = "-100%"; 
+       header.style.boxShadow = 'none';
     }
   });
 }
