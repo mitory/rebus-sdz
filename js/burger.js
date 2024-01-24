@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-        wrapper.addEventListener("click", function(event) {
+        wrapper.addEventListener("click", function (event) {
             wrapper.classList.remove("show");
             navMobileMenu.classList.remove("show");
         });
@@ -32,20 +32,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth < 768) {
-  const header = document.querySelector(".nav");
+        const header = document.querySelector(".nav");
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 200) {
-        header.style.background = getComputedStyle(document.documentElement).getPropertyValue('--main-green-color')
-        document.querySelector('.nav-mobile__logo').style.display = 'block';
-        document.querySelector('.nav-mobile__tel').style.display = 'block';
-       header.style.boxShadow = '0 5px 5px -5px rgba(0, 0, 0, .5)';
-    } else {
-        document.querySelector('.nav-mobile__logo').style.display = 'none';
-        document.querySelector('.nav-mobile__tel').style.display = 'none';
-        header.style.background = 'transparent';
-       header.style.boxShadow = 'none';
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 200) {
+                header.style.background = getComputedStyle(document.documentElement).getPropertyValue('--main-green-color')
+                document.querySelector('.nav-mobile__logo').style.display = 'block';
+                document.querySelector('.nav-mobile__tel').style.display = 'block';
+                header.style.boxShadow = '0 5px 5px -5px rgba(0, 0, 0, .5)';
+            } else {
+                document.querySelector('.nav-mobile__logo').style.display = 'none';
+                document.querySelector('.nav-mobile__tel').style.display = 'none';
+                header.style.background = 'transparent';
+                header.style.boxShadow = 'none';
+            }
+        });
     }
-  });
-}
 });

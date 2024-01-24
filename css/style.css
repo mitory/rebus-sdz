@@ -138,13 +138,14 @@
 }
 
 .nav-mobile__tel {
-		display: none;
-	}
-	.nav-mobile__logo {
-		display: none;
-		width: 35px;
-		margin: 10px;
-	}
+	display: none;
+}
+
+.nav-mobile__logo {
+	display: none;
+	width: 35px;
+	margin: 10px;
+}
 
 
 .structure {
@@ -348,8 +349,14 @@
 .features-item__text {
 	text-align: center;
 	min-height: 90px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	font-weight: 400;
 }
@@ -588,6 +595,7 @@
 #popupMessage.show {
 	display: block;
 }
+
 #wrapper.show {
 	display: block;
 }
@@ -688,23 +696,6 @@
 	.overlay-image {
 		right: 10%;
 	}
-
-	/*html {
-		font-size: 16px;
-	}
-
-	.button {
-		max-width: 150px;
-	}
-
-	.contact-data,
-	.textarea {
-		width: 370px;
-	}
-
-	.footer__wrapper {
-		margin-left: 400px;
-	}*/
 }
 
 @media (max-width: 1200px) {
@@ -997,6 +988,8 @@
 		font-size: var(--link-size);
 		padding: 100px 0;
 		gap: 18px;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 	}
 
@@ -1012,8 +1005,14 @@
 
 
 	.mobile_nav {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
 		justify-content: space-between;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
 		align-items: center;
 
 	}
@@ -1029,6 +1028,7 @@
 		flex-direction: column;
 		margin: 10px;
 	}
+
 	.bar {
 		width: 25px;
 		height: 3px;
@@ -1054,6 +1054,7 @@
 		transition: 0.5s;
 		z-index: 2;
 	}
+
 	.wrapper {
 		display: none;
 		position: fixed;
@@ -1071,12 +1072,8 @@
 	.nav__item {
 		padding: 0 0 0 10px;
 		width: 150px;
-		
+
 	}
-	/*.nav__item a {
-		font-size: 16px;
-		font-weight: 700;
-	}*/
 
 	.nav__item:nth-last-child(1) {
 		padding: 0 0 0 10px;
@@ -1089,9 +1086,10 @@
 	.nav-mobile-menu.show {
 		left: 0;
 	}
+
 	.modal-form .input {
-	width: 272px;
-}
+		width: 272px;
+	}
 }
 
 @media (max-width: 576px) {
@@ -1193,13 +1191,16 @@
 	.structure {
 		height: 650px;
 	}
+
 	.modal-form .input {
-	max-width: 100%;
-}
-.modal-content {
-	margin: 50px auto;
-}
-.modal-form__button {
-	max-width: 100%;
-}
+		max-width: 100%;
+	}
+
+	.modal-content {
+		margin: 50px auto;
+	}
+
+	.modal-form__button {
+		max-width: 100%;
+	}
 }

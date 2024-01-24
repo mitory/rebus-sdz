@@ -1,33 +1,29 @@
 const form_request = document.forms.request;
 
 
-function validateTel(input){
-	if (input.value.charAt(0) !== '8' && 
+function validateTel(input) {
+	if (input.value.charAt(0) !== '8' &&
 		((input.value.length >= 2 && input.value.substring(0, 2) !== '+7') || input.value.length === 1)) {
-		if(input.value.charAt(0) === '+'){
-			input.value = input.value.slice (1)
+		if (input.value.charAt(0) === '+') {
+			input.value = input.value.slice(1)
 		}
 		input.value = '+7' + input.value;
 	}
-	if(!/^[0-9+]+$/.test(input.value)) {
-			input.value = '+7';
+	if (!/^[0-9+]+$/.test(input.value)) {
+		input.value = '+7';
 	}
-	if(input.value.length > 12) {
+	if (input.value.length > 12) {
 		input.value = input.value.substring(0, 12)
 	}
 }
-function noDigits(event) {
-  if ("1234567890".indexOf(event.key) != -1)
-    event.preventDefault();
-}
 
 function validateFIO(event) {
-  const inputValue = event.target.value;
-  const isValid = /^[а-яА-Я ]*$/.test(inputValue);
+	const inputValue = event.target.value;
+	const isValid = /^[а-яА-Я ]*$/.test(inputValue);
 
-  if (!isValid) {
-    event.target.value = inputValue.replace(/[^а-яА-Я ]/g, ''); // Удаление невалидных символов
-  }
+	if (!isValid) {
+		event.target.value = inputValue.replace(/[^а-яА-Я ]/g, ''); // Удаление невалидных символов
+	}
 }
 
 form_request.tel.addEventListener("input", function (event) {
@@ -43,15 +39,15 @@ form_request.tel.addEventListener("paste", function (event) {
 
 form_request.addEventListener("submit", function (event) {
 	event.preventDefault();
-	if(!form_request.name.value || !form_request.organization.value ||
-		!form_request.email.value || !form_request.tel.value){
+	if (!form_request.name.value || !form_request.organization.value ||
+		!form_request.email.value || !form_request.tel.value) {
 		showPopup("Пожалуйста, заполните всю контактную информацию")
 	} else {
-		if(form_request.name.value.length < 5) {
+		if (form_request.name.value.length < 5) {
 			showPopup("Пожалуйста, введите полное имя")
 			return;
 		}
-		if(form_request.tel.value.length < 10) {
+		if (form_request.tel.value.length < 10) {
 			showPopup("Пожалуйста, введите полный номер телефона")
 			return;
 		}
