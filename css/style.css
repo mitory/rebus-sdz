@@ -65,6 +65,7 @@
 .first-block__text {
 	max-width: 660px;
 	margin-bottom: 50px;
+	font-weight: 400;
 }
 
 .first-block__buttons {
@@ -179,6 +180,7 @@
 	background: url('../img/icons/ellipse-green.svg') no-repeat left center;
 	padding-left: 24px;
 	font-weight: 400;
+	z-index: 2;
 }
 
 .structure-and-functions__wrapper {
@@ -336,6 +338,10 @@
 
 .features-item__text {
 	text-align: center;
+	min-height: 90px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	font-weight: 400;
 }
 
@@ -666,7 +672,7 @@
 		right: 10%;
 	}
 
-	html {
+	/*html {
 		font-size: 16px;
 	}
 
@@ -681,7 +687,7 @@
 
 	.footer__wrapper {
 		margin-left: 400px;
-	}
+	}*/
 }
 
 @media (max-width: 1200px) {
