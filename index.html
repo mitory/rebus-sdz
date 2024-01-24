@@ -318,7 +318,7 @@
 			<h2 class="section__title request__title ">Запрос коммерческого предложения</h2>
 			<form action="" name="request" class="form">
 				<div class="contact-data">
-					<input type="text" id="name" name="name" class="input" placeholder="ФИО" onkeypress="noDigits(event)" oninput="validateFIO(event)"/>
+					<input type="text" id="name" name="name" class="input" placeholder="ФИО" inputmode="text" oninput="validateFIO(event)"/>
 					<input type="text" id="organization" name="organization" class="input" placeholder="Организация"/>
 					<input type="email" id="email" name="email" class="input" placeholder="Почта"/>
 					<input type="tel" id="tel" name="tel" class="input" onkeypress="return /[0-9+]/.test(event.key)" placeholder="Телефон"/>
