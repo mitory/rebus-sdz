@@ -17,6 +17,16 @@ function validateTel(input){
 	}
 }
 
+
+function validateFIO(event) {
+  const inputValue = event.target.value;
+  const isValid = /^[а-яА-Я]*$/.test(inputValue);
+
+  if (!isValid) {
+    event.target.value = inputValue.replace(/[^а-яА-Я]/g, ''); // Удаление невалидных символов
+  }
+}
+
 // function validateFIO(input){
 // 	if(!/^[а-яА-Я]+$/u.test(input.value)){
 
