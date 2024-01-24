@@ -137,6 +137,15 @@
 	display: none;
 }
 
+.nav-mobile__tel {
+		display: none;
+	}
+	.nav-mobile__logo {
+		display: none;
+		width: 35px;
+		margin: 10px;
+	}
+
 
 .structure {
 	background: var(--main-gray-color);
@@ -995,14 +1004,7 @@
 /*		background: var(--main-green-color);*/
 background: transparent;
 	}
-	.nav-mobile__tel {
-		display: none;
-	}
-	.nav-mobile__logo {
-		display: none;
-		width: 35px;
-		margin: 10px;
-	}
+
 
 	.mobile_nav {
 		display: flex;

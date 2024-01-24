@@ -30,12 +30,6 @@ function validateFIO(event) {
   }
 }
 
-// function validateFIO(input){
-// 	if(!/^[а-яА-Я]+$/u.test(input.value)){
-
-// 	}
-// }
-
 form_request.tel.addEventListener("input", function (event) {
 	setTimeout(function () {
 		validateTel(form_request.tel)
@@ -53,6 +47,13 @@ form_request.addEventListener("submit", function (event) {
 		!form_request.email.value || !form_request.tel.value){
 		showPopup("Пожалуйста, заполните всю контактную информацию")
 	} else {
+		if(form_request.name.value.length < 5) }{
+			showPopup("Пожалуйста, введите полное имя")
+		}
+		if(form_request.tel.value.length < 10) {
+			showPopup("Пожалуйста, введите полный номер телефона")
+		}
+
 		console.log('Данные для отправки:')
 		console.log(form_request.name.value)
 		console.log(form_request.organization.value)
@@ -61,5 +62,4 @@ form_request.addEventListener("submit", function (event) {
 		console.log(form_request.comment.value)
 		showPopup("Ожидайте, мы с вами свяжемся")
 		this.reset();
-	}
-})
+	})
