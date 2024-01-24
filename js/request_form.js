@@ -26,7 +26,7 @@ function validateFIO(event) {
   const isValid = /^[а-яА-Я ]*$/.test(inputValue);
 
   if (!isValid) {
-    event.target.value = inputValue.replace(/^[а-яА-Я ]*$/, ''); // Удаление невалидных символов
+    event.target.value = inputValue.replace(/[^а-яА-Я ]/g, ''); // Удаление невалидных символов
   }
 }
 
