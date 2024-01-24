@@ -26,7 +26,7 @@ function validateFIO(event) {
   const isValid = /^[а-яА-Я ]*$/.test(inputValue);
 
   if (!isValid) {
-    event.target.value = inputValue.replace(/[^а-яА-Я ]/g, ''); // Удаление невалидных символов
+    event.target.value = inputValue.replace(/^[а-яА-Я ]*$/, ''); // Удаление невалидных символов
   }
 }
 
@@ -47,11 +47,13 @@ form_request.addEventListener("submit", function (event) {
 		!form_request.email.value || !form_request.tel.value){
 		showPopup("Пожалуйста, заполните всю контактную информацию")
 	} else {
-		if(form_request.name.value.length < 5) }{
+		if(form_request.name.value.length < 5) {
 			showPopup("Пожалуйста, введите полное имя")
+			return;
 		}
 		if(form_request.tel.value.length < 10) {
 			showPopup("Пожалуйста, введите полный номер телефона")
+			return;
 		}
 
 		console.log('Данные для отправки:')
@@ -62,4 +64,5 @@ form_request.addEventListener("submit", function (event) {
 		console.log(form_request.comment.value)
 		showPopup("Ожидайте, мы с вами свяжемся")
 		this.reset();
-	})
+	}
+})

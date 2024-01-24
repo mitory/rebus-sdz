@@ -40,6 +40,16 @@ form_modal.addEventListener("submit", function (event) {
         !form_modal.modal_form_comfort_time.value){
         showPopup("Пожалуйста, заполните все поля")
     } else {
+        if(form_modal.modal_form_name.value.length < 5) {
+            showPopup("Пожалуйста, введите полное имя")
+            return;
+        }
+        if(form_modal.modal_form_tel.value.length < 10) {
+            showPopup("Пожалуйста, введите полный номер телефона")
+            return;
+        }
+
+        
         console.log('Данные для отправки:')
         console.log(form_modal.modal_form_name.value)
         console.log(form_modal.modal_form_tel.value)
