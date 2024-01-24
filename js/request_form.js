@@ -12,7 +12,17 @@ function validateTel(input){
 	if(!/^[0-9+]+$/.test(input.value)) {
 			input.value = '+7';
 	}
+	if(input.value.length > 12) {
+		input.value = input.value.substring(0, 12)
+	}
 }
+
+// function validateFIO(input){
+// 	if(!/^[а-яА-Я]+$/u.test(input.value)){
+
+// 	}
+// }
+
 form_request.tel.addEventListener("input", function (event) {
 	setTimeout(function () {
 		validateTel(form_request.tel)
